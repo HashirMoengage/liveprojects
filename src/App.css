@@ -1,0 +1,74 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #2541b3;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.app2{
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.8em;
+  margin-bottom: 40px;
+}
+
+.firstHeader {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  font-size: 2.4em;
+}
+
+.regions-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.total-project-counts{
+  text-align: center;
+}
+.region-link a {
+  display: block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.region-link a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+}

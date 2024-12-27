@@ -1,0 +1,177 @@
+/* Root container for the project list, including padding for inner elements */
+.project-list-container {
+  padding: 20px;
+}
+
+/* Style for scope items with inline display and rounded corners */
+.scope-item {
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 3px 6px;
+  border-radius: 10px;
+  background-color: #a258e79a; /* Semi-transparent light grey background */
+  color: #ffffff; /* White text for contrast */
+  font-size: 12px; /* Reduced font size for subtlety */
+}
+
+/* Centralize text alignment for counters and related components */
+.count {
+  text-align: center;
+}
+
+/* Counter elements with a pre-defined margin, padding, shadow, and transition effects */
+.counter {
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 50px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Go-Live counter specific background and text color */
+.go-live-counter {
+  background-color: #4caf4fef; /* Greenish shade for visual indication */
+  color: #fff; /* White text for readability */
+}
+
+/* Testing counter specific background and text color */
+.testing-counter {
+  background-color: #f48836e1; /* Orangish shade for visual indication */
+  color: #fff; /* White text for readability */
+}
+
+/* Hover state effects for counters with a slight raise and deeper shadow */
+.counter:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Distinct style for the project name */
+.project-name {
+  color: #007bff; /* Bright blue to stand out */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Header styles within the project list container */
+.project-list-container h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  color: #007bff; /* Bright blue for consistency */
+  font-size: 30px; /* Larger font size for header elements */
+  text-align: center;
+}
+
+/* Responsive table properties for better mobile viewing */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Base styles for the main table including width and collapsed borders */
+.project-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Minimum width for better handling of overflow */
+}
+
+/* Styling for table headers including color, text, and rounded corners  */
+.project-list-table thead {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.project-list-table thead tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.project-list-table thead tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Common text alignment and padding for consistency in table headers and cells */
+.project-list-table th,
+.project-list-table td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+/* Alternate background color for even rows and a border for the table body */
+.project-list-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.project-list-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Styling for the last row in the tbody with a distinct border */
+.project-list-table tbody tr:last-of-type {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Hover state for table rows with a background color change for indication */
+.project-list-table tbody tr:hover {
+  background-color: #f1f7ff;
+}
+
+/* Specific styles for status indications within the table */
+.status-go-live-ready {
+  color: green;
+  font-weight: bold;
+}
+
+.status-testing {
+  color: rgb(255, 89, 0);
+  font-weight: bold;
+}
+
+/* Style for error messages with centralized alignment */
+.error {
+  text-align: center;
+  font-size: 16px; /* Larger font for visibility */
+  color: #ff0000;
+}
+
+/* Loader styles with positioning, color, animation for loading indication */
+.loader {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #007bff; /* Bright blue matching primary color scheme */
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: #007bff; /* Visible border part */
+  animation: spin 1s infinite linear;
+}
+
+/* Before and after pseudo-elements used for loader animation */
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: spin 2s infinite;
+}
+
+.loader::after {
+  margin: 8px;
+  animation-duration: 3s;
+}
+
+/* Keyframes for the spinners' rotation animations */
+@keyframes spin { 
+  to { transform: rotate(1turn); }
+}
